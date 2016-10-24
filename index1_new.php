@@ -19,9 +19,9 @@ include 'module/meta.php';
         <link rel="stylesheet" type="text/css" href="css/check-style.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main_new.js"></script>
         <script src="js/control.js"></script>
-
+	</head>
         <body>
             <!--PC-->
             <div id="main_all_wrap" class="device_big">

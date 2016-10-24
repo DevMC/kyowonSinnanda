@@ -21,7 +21,7 @@ include 'module/meta_new.php';
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <script src="js/main_new.js"></script>
         <script src="js/control.js"></script>
-
+	</head>
         <body>
             <!--PC-->
             <div id="main_all_wrap" class="device_big">
