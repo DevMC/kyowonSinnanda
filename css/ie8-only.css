@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+#sub01 .q_box .q_list input[type=checkbox] {display:inline-block; width:1px; height:1px; text-align:center; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none;visiblity:hidden}
+input.name {line-height:34px;}
+input.phone_num {line-height:34px;}
+#info_pop .agree_box1 input[type=checkbox],
+#info_pop .agree_box2 input[type=checkbox]{position:absolute; width:1px; height:1px; display:block; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none;visiblity:hidden}
+#sub02 .sub2_q_list input[type=checkbox] {display:block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none; visiblity:hidden}
+#instant_prizes_pop input[type=checkbox] {display:block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none; visiblity:hidden}
+#quiz_step #step1 input[type=checkbox],
+#quiz_step #step2 input[type=checkbox],
+#quiz_step #step3 input[type=checkbox]{display:block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent;}
+#step1_answer_pop input[type=checkbox] {display:block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent}
+#step3_answer_pop_A input[type=checkbox],
+#step3_answer_pop_B input[type=checkbox] {display:block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none; visiblity:hidden}
+
+
+#quiz_step #step2_A .thum_box {position:relative;}
+#quiz_step #step2_A input[type=checkbox],
+#quiz_step #step2_B input[type=checkbox]{display: block; position:absolute; width:1px; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none;visiblity:hidden}
+
+#quiz_step #step3_A p,
+#quiz_step #step3_B p{ font-family:'Nanum Gothic';}
+#quiz_step #step3_A input[type=checkbox],
+#quiz_step #step3_B input[type=checkbox]{display: block; width:1px; position:absolute; height:1px; outline:none; background-color:transparent; border-color:transparent; background-color:transparent; -ms-filter: alpha(opacity=0); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; border-width: 0; border:none;visiblity:hidden}
+#quiz_step #step3_A label { width:150px; float:left; display:block; }
+
+#quiz_step #step3_A span.check.ex01_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex02_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex03_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex04_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex05_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex06_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex07_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex08_check {position:absolute; left:0px; top:-20px; display:none;}
+#quiz_step #step3_A span.check.ex09_check {position:absolute; left:0px; top:-20px; display:none;}
