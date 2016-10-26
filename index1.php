@@ -8,7 +8,6 @@ include 'module/meta.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <title>교원 미니사이트</title>
-
         <meta property="og:type" content="website">
         <meta property="og:title" content="<?=$event1_title?>" />   
         <meta property="og:url" content="<?=$event1_page?>" />  
@@ -21,7 +20,7 @@ include 'module/meta.php';
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/control.js"></script>
-
+	</head>
         <body>
             <!--PC-->
             <div id="main_all_wrap" class="device_big">

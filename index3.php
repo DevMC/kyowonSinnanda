@@ -23,6 +23,7 @@ include 'module/meta.php';
         <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/control.js"></script>
+	</head>
         <body>
             <!--PC-->
             <div id="main_all_wrap" class="device_big">

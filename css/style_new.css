@@ -593,7 +593,7 @@ area {
     background-size: 600px 389px;
     background-position: top center;
 }
-#sns_share_pop .close_btn 
+#sns_share_pop .close_btn, 
 #sns_share_pop3 .close_btn{
     position: absolute;
     right: 10px;
@@ -610,6 +610,7 @@ area {
     text-align: center;
     margin: 260px auto 0 auto;
 }
+
 #sns_share_pop3  ul{
     overflow: hidden;
     width: 228px;
@@ -644,7 +645,7 @@ area {
     margin-top: 10px;
 }
 /*오답팝업*/
-#incorrect_pop {width:600px; height:431px; background-color:transparent; margin-left:-300px; border-radius:20px; margin-top:-215px; top:50%;}
+#incorrect_pop {width:600px; height:431px; background-color:transparent; margin-left:-300px; border-radius:20px; margin-top:-300px; top:50%;}
 #incorrect_pop .close_btn {position:absolute; right:20px; top:20px;}
 #incorrect_pop .close_btn img {width:30px; height:30px;}
 #incorrect_pop .main_img {width:600px; display: block;}
@@ -1525,6 +1526,140 @@ img.video_comment {
         margin: 0 auto;
         width: 14%;
     }
+	#mobile_sub1 {
+		background-image: url(../renew_img/mobile/mobile_back1.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	#mobile_sub1 .inner_wrap{
+		width:85%;
+		margin:0 auto; 
+		overflow:hidden;
+		padding-bottom:40%;
+	}
+	#mobile_sub1 .inner_wrap .title {
+		padding-top:20%; 
+		padding-bottom:10%;
+	}
+	#mobile_sub1 .inner_wrap ul li{float:left; width:50%; display:block;}
+	#mobile_sub2 {
+		overflow:hidden;
+		background-image: url(../renew_img/mobile/mobile_back2.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	#mobile_sub2 .inner_wrap {width:85%; margin:0 auto;}
+	#mobile_sub2 .inner_wrap .title{padding-top:10%; 
+		padding-bottom:10%;}
+	#mobile_sub2 .vod_wrap {margin-top:18%;}
+	#mobile_sub2 .vod_inner_wrap {
+		position:absolute; 
+		width:100%; 
+		margin:0 auto; 
+		top:6%;
+	}
+	#mobile_sub2 .vod_inner_wrap .vod_box {width:94%; margin:0 auto;} 
+	#mobile_sub2 .embed-container {
+		position: relative; 
+		padding-bottom: 64.25%; 
+		height: 0; 
+		overflow: hidden; 
+		max-width: 100%; 
+	} 
+	#mobile_sub2 .embed-container iframe, 
+	#mobile_sub2 .embed-container object, 
+	#mobile_sub2 .embed-container embed { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		width: 100%; 
+		height: 100%; 
+	}
+	#mobile_sub2 .event2_quiz_box {
+		width:100%; 
+		position:relative; 
+		padding-top:5%;
+	}
+	#mobile_sub2 .event2_quiz_box .thumWrap {
+		position: absolute; 
+		top: 0; 
+		z-index: 8;
+	}
+	#mobile_sub2 .event2_quiz_box .thumWrap  ul li{float: left;}
+	#mobile_sub2 .event2_quiz_box .thum_mask {
+		position: absolute;
+		width: 100%;
+		height: 98%;
+		left: 0;
+		top: 0;
+		display: none;
+		background: rgba(211,121,18,0.7);
+		z-index: 9;
+	}
+	#mobile_sub2 .event2_quiz_box .deco1{
+		position: absolute; 
+		width: 24%; 
+		left:0px; 
+		top:3%; 
+		z-index:10;
+	}
+	#mobile_sub2 .event2_quiz_box .deco2{
+		position: absolute; 
+		width: 20%; 
+		left: 0px; 
+		bottom: 3%; 
+		z-index: 10;
+	}
+	#mobile_sub2 .event2_quiz_box .deco3{
+		position: absolute; 
+		width: 24%; 
+		right: 0px; 
+		bottom: 3%; 
+		z-index: 10;
+	}
+	#mobile_sub2 .thumWrap{
+		width: 64%; 
+		height: 78%; 
+		display: block; 
+		margin: 13.3% 18%;  
+		z-index: 9;
+	}
+	#mobile_sub2 .thumWrap .thumBox.thumBox01{
+		position: absolute; 
+		top: 0%; 
+		left: 0%; 
+		width: 47%;
+	}
+	#mobile_sub2 .thumWrap .thumBox span{
+		color: #fff;
+		position: absolute;
+    	font-size: 10vw;
+		margin-top:4vw;
+		width: 100%;
+		height:50%;
+		font-weight: 800;
+		z-index: 11;
+		text-align: center; 
+	}
+	#mobile_sub2 .thumWrap .thumBox.thumBox02{
+		position: absolute; 
+		top: 0%; 
+		right: 3%; 
+		width: 47%;
+	}
+	#mobile_sub2 .thumWrap .thumBox.thumBox03{
+		position: absolute; 
+		top: 50%; 
+		left: 0%; 
+		width: 47%;
+	}
+	#mobile_sub2 .thumWrap .thumBox.thumBox04{
+		position: absolute; 
+		top: 50%; 
+		right: 3%; 
+		width: 47%;
+	}
+	#mobile_sub2 .thumWrap .thumBox img {width:100%;}
 }
 @media all and (max-width: 970px) and (min-width: 650px) {
     #mobile_sub1_application_pop .title01, #mobile_sub1_application_pop .title02 {

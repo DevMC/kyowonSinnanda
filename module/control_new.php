@@ -1,6 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-	$evt_gubun = $_REQUEST['evt_gubun'];
+	
+	$evt_gubun = $_REQUEST['gubunevent'];
 	$name = $_REQUEST['name'];
 	$phone = $_REQUEST['phone'];
 	
@@ -22,4 +23,7 @@ header("Content-Type: text/html; charset=UTF-8");
 	echo "<br>tw_click = ".$tw_click;
 	echo "<br>kt_click = ".$kt_click;
 	echo "<br>ks_click = ".$ks_click;
+	echo "<br>";
+
+
 ?>

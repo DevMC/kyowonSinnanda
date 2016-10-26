@@ -173,6 +173,7 @@ include 'module/meta.php';
             }
             
         </script>
+		</head>
         <body>  
             <!--pc-->
             <div id="main_all_wrap" class="device_big">
