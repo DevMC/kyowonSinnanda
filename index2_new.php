@@ -8,7 +8,6 @@ include 'module/meta_new.php';
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>교원 미니사이트</title>
-	
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<?=$event2_title?>" />
 	<meta property="og:url" content="<?=$event2_page?>" />
@@ -100,8 +99,8 @@ include 'module/meta_new.php';
 							</ul>
 							<img src="renew_img/pc/video_thum_box_deco2.png" alt="" class="deco2">
 						</div>
-						<a href="javascript:;" class="sub2_q_btn reset" onclick="event1_check_advtg_reset();"><img src="renew_img/pc/q_btn_reset_20161017.png" alt="다시하기"></a>
-						<a href="javascript:;" class="sub2_q_btn" onclick="event1_check_advtg();"><img src="renew_img/pc/q_btn_20161017.png" alt="응모하기"></a>
+						<a href="javascript:;" class="sub2_q_btn_reset" onclick="event2_check_advtg_reset();"><img src="renew_img/pc/q_btn_reset_20161017.png" alt="다시하기"></a>
+						<a href="javascript:;" class="sub2_q_btn" onclick="event2_check_advtg();"><img src="renew_img/pc/q_btn_20161017.png" alt="응모하기"></a>
 					</div>
 				</div>
 			</div>
@@ -174,7 +173,7 @@ include 'module/meta_new.php';
 
 			<!--경품보기 -->
 			<div class="popup" id="gift_list">
-				<a href="javascript:;" class="close_btn" onclick="popup.close('#gift_list');"><img src="img/close_btn2.png" ></a>
+				<a href="javascript:;" class="close_btn" onclick="popup.close('#gift_list');"><img src="renew_img/pc/pop_close2.png" ></a>
 			</div>
 			<!--경품보기 끝-->
 			<!--하단-->
@@ -235,7 +234,7 @@ include 'module/meta_new.php';
 			<div class="inner_wrap">
 				<div class="position_rel">
 					<img src="renew_img/mobile/mobile_2_title.png" alt="" class="img-responsive title">
-					<a href="" style="position:absolute; bottom:-13%; right:0; width:28%;"><img src="renew_img/mobile/mobile_2_gift_pop_btn.png" class="img-responsive"></a>
+					<a href="javascript:;" onclick="popup.open('#mobile_sub1_gift_pop');" style="position:absolute; bottom:-13%; right:0; width:28%;"><img src="renew_img/mobile/mobile_2_gift_pop_btn.png" class="img-responsive"></a>
 				</div>
 				<div class="position_rel vod_wrap">
 				   <img src="renew_img/mobile/vod_box_back.png" alt="" class="img-responsive">
@@ -270,9 +269,9 @@ include 'module/meta_new.php';
 					</div>
 				</div>
 			</div>
-			<div class="inner_wrap">
-			<a href=""><img src="renew_img/mobile/mobile_event2_reset_off.png" alt="다시하기" class="img-responsive"></a>
-			<a href=""><img src="renew_img/mobile/mobile_event2_ok_off.png" alt="응모하기" class="img-responsive"></a>
+			<div class="btnWrap">
+			<a href="javascript:;" class="event2ResetBtn" onclick="event2_check_advtg_reset();" ><img src="renew_img/mobile/mobile_event2_reset_off.png" alt="다시하기" class="img-responsive"></a>
+			<a href="javascript:;" class="event2OkBtn" onclick="event2_check_advtg();"><img src="renew_img/mobile/mobile_event2_ok_off.png" alt="응모하기"  class="img-responsive"></a>
 			</div>
 		</div>
 		<!--컨텐츠 끝-->
@@ -292,17 +291,28 @@ include 'module/meta_new.php';
 	<!--모바일 경품보기 팝업-->
 	<div class="popup" id="mobile_sub1_gift_pop">
 		<div class="mobile_sub1_gift_inner">
-			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_gift_pop');"><img src="img/mobile_close.png" ></a>
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_gift_pop');"><img src="renew_img/pc/pop_event3_close.png" ></a>
 			<img src="img/mobile_sub1_gift_pop.png" class="img-responsive">
 		</div>
 	</div>
 	<!--모바일 경품보기 팝업 끝-->
+	<!--모바일 오답팝업-->
+	<div class="popup" id="incorrect_pop_mobile">
+		<div class="innerWrap">
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#incorrect_pop_mobile');"><img src="renew_img/pc/pop_close.png" alt="닫기"></a>
+			<img src="renew_img/mobile/incorrect_main_pop_mobile.jpg" alt="" class="img-responsive">
+			<div class="btn_wrap">
+				 <a href="javascript:;" onclick="popup.close('#incorrect_pop_mobile');"><img src="renew_img/mobile/incorrect_btn_mobile.png" alt="돌아가기" class="img-responsive"></a>
+			</div>
+		 </div>
+	</div>
+	<!-- 오답팝업 끝-->
 	<!--공유하기 팝업 시작-->
-	<div class="popup" id="mobile_sub1_application_pop">
-		<div class="mobile_sub1_application_pop_inner">
-			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_application_pop');"><img src="img/mobile_sns_pop_close_btn.png" > </a>
-			<img src="img/mobile_sns_pop_title.png" alt="" class="img-responsive">
-			<form id="mobile_index1">
+	<div class="popup" id="mobile_sub2_application_pop" style="display:none;">
+		<div class="mobile_sub2_application_pop_inner">
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub2_application_pop');"><img src="renew_img/mobile/mobile_sns_pop_close_btn.png" > </a>
+			<img src="renew_img/mobile/mobile_sns_pop_title.jpg" alt="" class="img-responsive">
+			<form id="mobile_index2">
 				<div class="info_input_wrap">
 					<label for="mobile_index1_name"><img src="img/mobile_input02.png" class="title01"></label>
 					<input type="text" id="mobile_index1_name" class="name" placeholder="이름을 입력해주세요">
@@ -318,7 +328,7 @@ include 'module/meta_new.php';
 							<div class="agree_01">
 								<?php
 								include 'agree_1.php';
-?>
+								?>
 							</div>
 						</div>
 						<div class="agree_box2">
@@ -327,14 +337,14 @@ include 'module/meta_new.php';
 							<div class="agree_02">
 								<?php
 								include 'agree_2.php';
-?>
+								?>
 							</div>
 
 						</div>
 					</div>
 				</div>
 				<div class="share_btn_wrap">
-					<a href="javascript:;" id="mobile_index1_share_btn"> <img src="img/mobile_sns_share_btn.png" class="img-responsive"> </a>
+					<a href="javascript:;" id="mobile_index1_share_btn"> <img src="renew_img/mobile/mobile_sns_share_btn.png" class="img-responsive"> </a>
 				</div>
 			</form>
 		</div>
@@ -343,14 +353,14 @@ include 'module/meta_new.php';
 	<!--모바일 참여완료 팝업-->
 	<div class="popup" id="mobile_sns_share_pop">
 		<div class="mobile_sns_share_pop_inner  position_rel">
-			<img src="img/mobile_sns_share_pop.png" alt="" class="img-responsive">
+			<img src="renew_img/mobile/mobile_sns_share_pop.jpg" alt="" class="img-responsive">
 			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sns_share_pop');"><img src="img/mobile_sns_pop_close_btn.png" ></a>
 			<div class="mobile_sns_share_btn_wrap">
 				<a href="#" class="sns_btn share_fb"><img src="img/mobile_sns_share_pop_fb.png" class="img-responsive"></a>
 				<a href="#" class="sns_btn share_tw"><img src="img/mobile_sns_share_pop_tw.png" class="img-responsive"></a>
 				<a href="#" class="sns_btn share_kt" id="kakao-link-btn"><img src="img/mobile_sns_share_pop_kt.png" class="img-responsive"></a>
-				<div class="mobile_sns_share_ok_Wrap" style="width:45%; margin:0 auto;">
-					<a href="javascript:;" onclick="window.location.reload();"> <img src="img/mobile_sns_share_pop_ok.png" alt="" class="img-responsive"> </a>
+				<div class="mobile_sns_share_ok_Wrap" style="width:50%; margin:2% auto;">
+					<a href="javascript:;" onclick="window.location.reload();"> <img src="renew_img/mobile/mobile_sns_share_pop_ok.png" alt="" class="img-responsive"> </a>
 				</div>
 			</div>
 		</div>
@@ -361,15 +371,15 @@ include 'module/meta_new.php';
 	Kakao.init('49443218cfbfa00a2dad57cffe14be7b');
 	Kakao.Link.createTalkLinkButton({
 		container: '#kakao-link-btn',
-		label: '<?=$event1_title?>',
+		label: '<?=$event2_title?>',
 		image: {
-		src: '<?=$event1_kakaoimg?>',
+		src: '<?=$event2_kakaoimg?>',
 		width: '400',
 		height: '200'
 		},
 		webButton: {
-		text: '<?=$event1_desc?>',
-		url: '<?=$event1_page?>' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+		text: '<?=$event2_desc?>',
+		url: '<?=$event2_page?>' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 		}
 	});
 	</script>

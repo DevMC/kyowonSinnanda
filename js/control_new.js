@@ -29,7 +29,7 @@ function viewCnt(){
 
 
 var insert_user = function(name, phone) { 
-
+    //console.log(gubunevent);
 	$.ajax({
 		type : "POST",
 		url : "./module/control_new.php",
@@ -42,7 +42,7 @@ var insert_user = function(name, phone) {
 		},
 		dataType : "html",
 		success : function(data) {
-			//alert('성공');
+			console.log('성공'+ data);
 			if(gubunevent == "event2"){
 				if(mobile_on == 0){
 					popup.open('#sns_share_pop');
@@ -53,6 +53,18 @@ var insert_user = function(name, phone) {
 			}else if(gubunevent == "event2"){
 				window.location.reload();
 			}
+			
+			if(gubunevent == "event3"){
+				if(mobile_on == 0){
+					popup.open('#sns_share_pop3');
+				}else{
+					popup.open('#mobile_sns_share_pop3');
+				}							
+				
+			}else if(gubunevent == "event3"){
+				window.location.reload();
+			}
+
 		},
 		error : function(xhr, status, error) {
 			//alert('error');

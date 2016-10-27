@@ -70,10 +70,10 @@ include 'module/meta_new.php';
 							<img src="renew_img/pc/bg_deco2.png" alt="" class="main_deco2">
 							<div class="sub3_info">
 								<img src="renew_img/pc/title_sub3.png" alt="퍼즐이벤트 빈칸에 들어갈 알맞은 퍼즐을 맞히면 푸짐한 선물이 팡팡" class="title_img">
-								<a href="javascript:;" onclick="popup.open('#gift_list_new');" class="btn_giftpop" ><img src="renew_img/pc/btn_giftpop.png" alt="경품보기"></a>
 							</div>
 							<div class="sub3_puzzle_wrap">
 								<div class="sub3_puzzle_innerwrap">
+								<a href="javascript:;" onclick="popup.open('#gift_list_new');" class="btn_giftpop" ><img src="renew_img/pc/btn_giftpop.png" alt="경품보기"></a>
 									<div class="left_box" style="">
 										<img src="renew_img/pc/img_puzzlebox.png" alt="">
 									</div>
@@ -123,7 +123,7 @@ include 'module/meta_new.php';
 							?>
 						</div>
 						<div class="share_btn_wrap other_new">
-							<a href="javascript:;" id="share_btn"><img src="img/sns_share_btn.png"></a>
+							<a href="javascript:;" id="share_btn2"><img src="img/sns_share_btn.png"></a>
 						</div>
 					</div>
 				</form>
@@ -141,7 +141,7 @@ include 'module/meta_new.php';
 			<!-- 오답팝업 끝-->                    
 			<!---sns 공유하기-->
 			<div class="popup" id="sns_share_pop3">
-				<a href="javascript:;" class="close_btn" onclick="popup.close('#sns_share_pop3');"><img src="img/pop_close.png" ></a>
+				<a href="javascript:;" class="close_btn" onclick="popup.close('#sns_share_pop3');"><img src="renew_img/pc/pop_close2.png" ></a>
 				<ul>
 					<li>
 						<a href="javascript:;" class="share_fb"><img src="img/fb_icon.png"></a>
@@ -159,7 +159,7 @@ include 'module/meta_new.php';
 			<!---sns 공유하기 끝-->
 			<!--경품보기 -->
 			<div class="popup" id="gift_list_new">
-				<a href="javascript:;" class="close_btn" onclick="popup.close('#gift_list_new');"><img src="img/close_btn2.png" ></a>
+				<a href="javascript:;" class="close_btn" onclick="popup.close('#gift_list_new');"><img src="renew_img/pc/pop_close2.png" ></a>
 			</div>
 			<!--경품보기 끝-->
 			<!--하단-->
@@ -185,7 +185,6 @@ include 'module/meta_new.php';
 	</div>
 	<!--PC  끝-->
 	<!--모바일-->
-	<!-- 
 	<div class="container960 device_small">
 		<div id="mobile_nav">
 			<h1><a href="index.php"><img src="img/mobile_logo.png" alt="교원 신난다 체험스쿨" class="img-responsive"></a></h1>
@@ -215,13 +214,29 @@ include 'module/meta_new.php';
 				</li>
 			</ul>
 		</div>
-		<div class="clearfix"></div> -->
+		<div class="clearfix"></div>
 		<!--컨텐츠 시작-->
-		<!-- <div class="container960" id="mobile_sub1">
-
-		</div> -->
+		<div class="container960" id="mobile_sub3">
+			<img src="renew_img/mobile/left_deco1.png" alt="" class="deco1">
+			<img src="renew_img/mobile/right_deco2.png" alt="" class="deco2">
+			<img src="renew_img/mobile/mobile3_content.png" alt="" class="img-responsive" class="main_contents_back">
+			<div class="contents_box">
+				<a href="javascript:;" onclick="popup.open('#mobile_sub1_gift_pop');"><img src="renew_img/mobile/mobile_3_gift_pop_btn.png" alt="" style="width:30%; position:absolute; right:-30%; top:-10%;"></a>
+				<img src="renew_img/mobile/quiz_box.png" alt="" class="img-responsive">
+				<div class="mobile_quiz_select_box">
+					<ul>
+						<li data-value="1" class="puzzl_li_m"><a href="javascript:;"><img src="renew_img/mobile/img_puzzleanswer1_off.png" class="img-responsive"></a></li>
+						<li class="answer_margin1 puzzl_li_m" data-value="2"><a href="javascript:;"><img src="renew_img/mobile/img_puzzleanswer2_off.png" class="img-responsive"></a></li>
+						<li class="answer_margin2 puzzl_li_m" data-value="3"><a href="javascript:;"><img src="renew_img/mobile/img_puzzleanswer3_off.png" class="img-responsive"></a></li>
+					</ul>
+					<a href="javascript:;" class="mobile_btn_application" style="width:80%; margin:-5% auto 0 auto; display:block; padding-left:3%"><img src="renew_img/mobile/m_btn_application_off.png" class="img-responsive"></a>
+				</div>
+				
+			</div>
+			
+		</div>
 		<!--컨텐츠 끝-->
-		<!-- <div id ="mobile_footer">
+		<div id ="mobile_footer">
 			<p>
 				주소 : 서울시 종로구 청계천로 51-1 구몬빌딩 12층
 			</p>
@@ -232,26 +247,37 @@ include 'module/meta_new.php';
 				COPYRIGHT © 2016 KYOWON.CO.LTD ALL RIGHTS RESERVED
 			</p>
 		</div>
-	</div> -->
+	</div>
 	<!--모바일 끝-->
 	<!--모바일 경품보기 팝업-->
-	<!-- <div class="popup" id="mobile_sub1_gift_pop">
+	<div class="popup" id="mobile_sub1_gift_pop">
 		<div class="mobile_sub1_gift_inner">
-			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_gift_pop');"><img src="img/mobile_close.png" ></a>
-			<img src="img/mobile_sub1_gift_pop.png" class="img-responsive">
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_gift_pop');"><img src="renew_img/pc/pop_event3_close.png" ></a>
+			<img src="renew_img/mobile/mobile_sub3_gift_pop.png" class="img-responsive">
 		</div>
-	</div> -->
+	</div>
 	<!--모바일 경품보기 팝업 끝-->
+	<!--오답팝업-->
+	<div class="popup" id="incorrect_pop_mobile">
+		<div class="innerWrap">
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#incorrect_pop_mobile');"><img src="renew_img/pc/pop_event3_close.png" alt="닫기"></a>
+			<img src="renew_img/mobile/incorrect_main_pop_mobile3.jpg" alt="" class="img-responsive">
+			<div class="btn_wrap">
+				 <a href="javascript:;" onclick="popup.close('#incorrect_pop_mobile');"><img src="renew_img/mobile/incorrect_btn_mobile3.png" alt="돌아가기" class="img-responsive"></a>
+			</div>
+		 </div>
+	</div>
+	<!-- 오답팝업 끝--> 
 	<!--공유하기 팝업 시작-->
-	<!-- <div class="popup" id="mobile_sub1_application_pop">
-		<div class="mobile_sub1_application_pop_inner">
-			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub1_application_pop');"><img src="img/mobile_sns_pop_close_btn.png" > </a>
-			<img src="img/mobile_sns_pop_title.png" alt="" class="img-responsive">
-			<form id="mobile_index1">
+	<div class="popup" id="mobile_sub3_application_pop">
+		<div class="mobile_sub3_application_pop_inner">
+			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sub3_application_pop');"><img src="renew_img/pc/pop_event3_close.png" > </a>
+			<img src="renew_img/mobile/mobile_sns_pop_title3.png" alt="" class="img-responsive">
+			<form id="mobile_index3" style="padding:3% 0 4% 0; background-color: #47d8ee;">
 				<div class="info_input_wrap">
-					<label for="mobile_index1_name"><img src="img/mobile_input02.png" class="title01"></label>
+					<label for="mobile_index1_name"><img src="renew_img/mobile/mobile_input02.png" class="title01"></label>
 					<input type="text" id="mobile_index1_name" class="name" placeholder="이름을 입력해주세요">
-					<label for="mobile_index1_phone_num"><img src="img/mobile_input01.png" class="title02"></label>
+					<label for="mobile_index1_phone_num"><img src="renew_img/mobile/mobile_input01.png" class="title02"></label>
 					<input type="tel" id="mobile_index1_phone_num" class="phone_num" placeholder="'-'를 제외한 휴대폰 번호를 입력해주세요.">
 					<div class="clearfix"></div>
 				</div>
@@ -259,62 +285,63 @@ include 'module/meta_new.php';
 					<div class="mobile_agree_inner_back">
 						<div class="agree_box1">
 							<input type="checkbox" id="mobile_index1_agree01" class="agree01 checkbox-style" />
-							<label for="mobile_index1_agree01"><img src="img/mobile_input03.png" class="title03"></label>
+							<label for="mobile_index1_agree01"><img src="renew_img/mobile/mobile_input03.png" class="title03"></label>
 							<div class="agree_01">
 								<?php
-								//include 'agree_1.php';
-?>
+								include 'agree_1.php';
+								?>
 							</div>
 						</div>
 						<div class="agree_box2">
 							<input type="checkbox" id="mobile_index1_agree02" class="agree02 checkbox-style" />
-							<label for="mobile_index1_agree02"><img src="img/mobile_input03.png" class="title03"></label>
+							<label for="mobile_index1_agree02"><img src="renew_img/mobile/mobile_input03.png" class="title03"></label>
 							<div class="agree_02">
 								<?php
-								//include 'agree_2.php';
-?>
+								include 'agree_2.php';
+								?>
 							</div>
 
 						</div>
 					</div>
 				</div>
 				<div class="share_btn_wrap">
-					<a href="javascript:;" id="mobile_index1_share_btn"> <img src="img/mobile_sns_share_btn.png" class="img-responsive"> </a>
+					<a href="javascript:;" id="mobile_index3_share_btn"><img src="renew_img/mobile/mobile_sns_share_btn3.png" class="img-responsive"></a>
+					<img src="renew_img/mobile/pop3_deco.png" style="width:15%; display:block; position:absolute; bottom:0; right:0px; max-width:80px;">
 				</div>
 			</form>
 		</div>
-	</div> -->
+	</div>
 	<!-- 공유하기 팝업 -->
 	<!--모바일 참여완료 팝업-->
-	<!-- <div class="popup" id="mobile_sns_share_pop">
+	<div class="popup" id="mobile_sns_share_pop3">
 		<div class="mobile_sns_share_pop_inner  position_rel">
-			<img src="img/mobile_sns_share_pop.png" alt="" class="img-responsive">
-			<a href="javascript:;" class="close_btn" onclick="popup.close('#mobile_sns_share_pop');"><img src="img/mobile_sns_pop_close_btn.png" ></a>
+			<img src="renew_img/mobile/mobile_sns_share_pop3.png" alt="" class="img-responsive">
+			<a href="javascript:;" class="close_btn other" onclick="popup.close('#mobile_sns_share_pop3');"><img src="renew_img/pc/pop_event3_close.png" ></a>
 			<div class="mobile_sns_share_btn_wrap">
 				<a href="#" class="sns_btn share_fb"><img src="img/mobile_sns_share_pop_fb.png" class="img-responsive"></a>
 				<a href="#" class="sns_btn share_tw"><img src="img/mobile_sns_share_pop_tw.png" class="img-responsive"></a>
 				<a href="#" class="sns_btn share_kt" id="kakao-link-btn"><img src="img/mobile_sns_share_pop_kt.png" class="img-responsive"></a>
-				<div class="mobile_sns_share_ok_Wrap" style="width:45%; margin:0 auto;">
+				<div class="mobile_sns_share_ok_Wrap" style="width:45%; margin:3% auto;">
 					<a href="javascript:;" onclick="window.location.reload();"> <img src="img/mobile_sns_share_pop_ok.png" alt="" class="img-responsive"> </a>
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<!--모바일 참여완료 팝업 -->
 	<!--모바일 끝-->
 	<script>
 	// Kakao.init('49443218cfbfa00a2dad57cffe14be7b');
 	// Kakao.Link.createTalkLinkButton({
 	// container: '#kakao-link-btn',
-	// label: '<?=$event1_title?>',
+	// label: '<?=$event3_title?>',
 	// image: {
-	// src: '<?=$event1_kakaoimg?>',
+	// src: '<?=$event3_kakaoimg?>',
 	// width: '400',
 	// height: '200'
 	// },
 	// webButton: {
-	// text: '<?=$event1_desc?>',
-	// url: '<?=$event1_page?>' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+	// text: '<?=$event3_desc?>',
+	// url: '<?=$event3_page?>' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 	// }
 	// });
 	</script>
