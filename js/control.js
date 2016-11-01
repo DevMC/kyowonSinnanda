@@ -8,7 +8,7 @@ $(document).ready(function(){
 function sns_share_count(click_sns, phone){
 	$.ajax({
 		type : "POST",
-		url : "./module/control.php",
+		url : "./module/control_new.php",
 		data : {
 			"sns_share" : 'sns_share',
 			"click_sns" : click_sns,
@@ -28,7 +28,7 @@ function sns_share_count(click_sns, phone){
 function viewCnt(){
 	$.ajax({
 		type : "POST",
-		url : "./module/control.php",
+		url : "./module/control_new.php",
 		data : {
 			"viewcount" : 'viewcount',
 			"evt_gubun" : gubunevent,

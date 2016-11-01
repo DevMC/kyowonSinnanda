@@ -1,6 +1,6 @@
 var name_val = "";
 var phone_val = "";
-var main_URL = location.origin+location.pathname;
+var main_URL = "https://"+location.host+location.pathname;
 var fb_click = 0;
 var tw_click = 0;
 var kt_click = 0;
@@ -74,15 +74,15 @@ $('.share_tw').click(function() {
 	if (gubunevent == "event1") var content = "[교원 신난다 체험스쿨] 똑같은 체험학습은 가라! 교육 전문 기업이 제안하는 교원 체험학습 영상 공유하고 다양한 경품의 주인공이 되어 보세요.";
 	if (gubunevent == "event2") var content = "[교원 신난다 체험스쿨] 신난다 영상 EVENT - 브랜드 영상 보고 순서 맞추면 선물이 팡팡! 행운의 주인공이 되세요.";
 	if (gubunevent == "event3") var content = "[교원 신난다 체험스쿨] 신난다 퍼즐 EVENT - 빈칸에 들어갈 퍼즐 조각 맞추고 푸짐한 선물 받아가세요.";
-	
 	var popOption = "width=600, height=600, resizable=no, scrollbars=no, status=no;";
-	var tw = window.open("https://twitter.com/share?url=" + encodeURIComponent(main_URL) + "&text=" + encodeURIComponent(content), 'twi모바일 접속 에러 갤럭시 노트4tter', popOption);
+	var tw = window.open("https://twitter.com/share?url=" + encodeURIComponent(main_URL) + "&text=" + encodeURIComponent(content), 'new', popOption);
 	tw_click++;
 	sns_share_count('tw', phone_val);//sns count
 });
 $('.share_fb').click(function() {
+	
 	var targetUrl = "https://www.facebook.com/sharer.php?u=" + main_URL;
-	var popOption = "width=600, height=600, resizable=no, scrollbars=no, status=no;";
+	var popOption = "width=600,height=600,resizable=no,scrollbars=no,status=no;";
 	var fb = window.open(encodeURI(targetUrl), "new", popOption);
 	sns_share_count('fb', phone_val);//sns count
 	fb_click++;
@@ -284,7 +284,7 @@ var popup = function(){
 
 /*20161018 새로 추가*/
 var count = 0;
-var result = ['3', '1', '2', '4']; //이미지 순서....정답
+var result = ['4', '2', '3', '1']; //이미지 순서....정답
 var input_result = [];    
 var loopc = 0;
 
